@@ -12,11 +12,11 @@ func main() {
 	router := gin.Default()
 
 	router.GET("/hello", func(c *gin.Context) {
-		c.String(200, "hello in Magic stream")
-
+		c.String(200, "hello Magic Stream Movies Server")
 	})
 
 	if err := router.Run(":8080"); err != nil {
-		fmt.Println("Failed to start server", err)
+		fmt.Println("Failed to start server:", err)
 	}
+
 }
